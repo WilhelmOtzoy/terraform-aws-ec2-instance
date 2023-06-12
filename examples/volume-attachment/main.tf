@@ -48,6 +48,7 @@ resource "aws_ebs_volume" "this" {
   size              = 1
 
   tags = local.tags
+  encrypted = true
 }
 
 ################################################################################
