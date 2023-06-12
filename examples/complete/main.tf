@@ -462,6 +462,7 @@ resource "aws_placement_group" "web" {
 }
 
 resource "aws_kms_key" "this" {
+  enable_key_rotation = true
 }
 
 resource "aws_network_interface" "this" {
